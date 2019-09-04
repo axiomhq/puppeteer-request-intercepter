@@ -15,7 +15,7 @@ $ npm install puppeteer-request-intercepter
 
 const puppeteer = require('puppeteer');
 
-const { initFixtureRouter } = require('../build/main');
+const { initFixtureRouter } = require('puppeteer-request-intercepter');
 
 (async () => {
   const browser = await puppeteer.launch();
