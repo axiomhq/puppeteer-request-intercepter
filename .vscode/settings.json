@@ -56,6 +56,15 @@
       "overrides": "config"
     }
   ],
+  // Specify paths/files to ignore.
+  "cSpell.ignorePaths": [
+    "*.d.ts",
+    "*.json",
+    "**/*.svg",
+    "**/.vscode/**",
+    ".prettierrc",
+    "tsconfig.json"
+  ],
   "cSpell.words": [
     "backstopjs",
     "intercepter",
