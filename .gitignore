@@ -1,0 +1,12 @@
+node_modules
+build
+test
+src/**.js
+.idea/*
+
+coverage
+*.log
+
+yarn.lock
+
+hn.pdf
