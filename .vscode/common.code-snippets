@@ -1,0 +1,23 @@
+{
+	"cSpell.disableNextLine": {
+		"prefix": "disable next cSpell",
+		"body": [
+			"// cSpell:disable-next-line"
+		],
+		"description": "cSpell:disable-next-line"
+	},
+	"cSpell.ignore": {
+		"prefix": "ignore cSpell",
+		"body": [
+			"// cSpell:ignore $1"
+		],
+		"description": "cSpell:ignore"
+	},
+	"dragons": {
+		"prefix": "dragons",
+		"body": [
+			"// 🐉🐉🐉"
+		],
+		"description": "Here be dragons"
+	}
+}

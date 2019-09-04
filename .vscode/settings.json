@@ -1,0 +1,65 @@
+{
+  "editor.formatOnSaveTimeout": 1500,
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "files.exclude": {
+    "**/.git": true, // this is a default value
+    "**/.DS_Store": true, // this is a default value
+    "**/._.DS_Store": true,
+    "**/node_modules": true, // this excludes all folders
+    // named "node_modules" from
+    // the explore tree
+    // alternative version
+    "node_modules": true, // this excludes the folder
+    // only from the root of
+    // your workspace
+    "static": true, // static is generated output so ignore
+    "dist": true,
+    ".cache-loader": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[less]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "vsicons.associations.folders": [
+    { "icon": "log", "format": "svg", "disabled": true },
+    { "icon": "notification", "format": "svg", "disabled": true },
+    { "icon": "config",
+      "extensions": [
+        "config",
+        ".config",
+        "configs",
+        ".configs",
+        "configuration",
+        ".configuration",
+        "configurations",
+        ".configurations",
+        "setting",
+        ".setting",
+        ".settings",
+        "ini",
+        ".ini",
+        "initializers",
+        ".initializers",
+      ],
+      "format": "svg",
+      "overrides": "config"
+    }
+  ],
+  "cSpell.words": [
+    "backstopjs",
+    "intercepter",
+    "viewports"
+  ],
+  "prettier.tslintIntegration": true
+}
