@@ -71,7 +71,7 @@ export async function initFixtureRouter(page: Page, options: FixtureRouterOption
         });
       } else {
         // continue the request (we'll save it in the response event).
-        await request.continue();
+        return request.continue();
       }
     } else {
       return request.continue();
