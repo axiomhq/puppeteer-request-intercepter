@@ -9,7 +9,6 @@
   "license": "MIT",
   "keywords": [],
   "scripts": {
-    "describe": "npm-scripts-info",
     "build": "run-s clean && run-p build:*",
     "build:main": "tsc -p tsconfig.json",
     "build:module": "tsc -p tsconfig.module.json",
@@ -27,7 +26,6 @@
     "prepare-release": "run-s reset version"
   },
   "scripts-info": {
-    "info": "Display information about the package scripts",
     "build": "Clean and rebuild the project",
     "example": "Run the puppeteer.js example which will create hn.pdf in the root directoy.",
     "fix": "Try to automatically fix any linting problems",
@@ -48,12 +46,11 @@
     "puppeteer": "^10.2.0"
   },
   "devDependencies": {
-    "@bitjson/npm-scripts-info": "^1.0.0",
-    "cz-conventional-changelog": "^2.1.0",
+    "cz-conventional-changelog": "^3.3.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.3.2",
-    "standard-version": "^6.0.1",
-    "trash-cli": "^3.0.0",
+    "standard-version": "^9.3.1",
+    "trash-cli": "^4.0.0",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.3.5"
