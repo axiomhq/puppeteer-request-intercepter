@@ -1,6 +1,6 @@
 import fs from 'fs-extra';
 import path from 'path';
-import puppeteer, { Page } from 'puppeteer';
+import { Page } from 'puppeteer';
 
 export interface FixtureRouterOptions {
   baseUrl?: string;
@@ -13,7 +13,7 @@ export interface FixtureRouteOptions {
 }
 
 export interface FixtureRoute {
-  method: puppeteer.HttpMethod;
+  method: string;
   route: string;
   fixturePath: string;
   options: FixtureRouteOptions;
@@ -31,16 +31,11 @@ export class FixtureRouter {
     this.fixtureRoutes.push(fixtureRoute);
   }
 
-  public route(
-    method: puppeteer.HttpMethod,
-    route: string,
-    fixturePath: string,
-    options: FixtureRouteOptions = {}
-  ): void {
+  public route(method: string, route: string, fixturePath: string, options: FixtureRouteOptions = {}): void {
     this.routeFixture(createFixture(method, route, fixturePath, options));
   }
 
-  public findRoute(method: puppeteer.HttpMethod, url: string): FixtureRoute | undefined {
+  public findRoute(method: string, url: string): FixtureRoute | undefined {
     return this.fixtureRoutes.find((fixture) => {
       const route = fixture.route.startsWith('http') ? fixture.route : `${this.baseUrl || ''}${fixture.route}`;
 
@@ -105,7 +100,7 @@ export async function initFixtureRouter(page: Page, options: FixtureRouterOption
 }
 
 export function createFixture(
-  method: puppeteer.HttpMethod,
+  method: string,
   route: string,
   fixturePath: string,
   options: FixtureRouteOptions = {}
