@@ -1,6 +1,6 @@
 {
   "name": "puppeteer-request-intercepter",
-  "version": "2.0.3",
+  "version": "3.0.0",
   "description": "Intercept API Requests and return Mocked Data",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -20,7 +20,7 @@
     "lint:ts": "tslint --project tsconfig.json --force --format stylish",
     "lint:prettier": "prettier \"src/**/*.ts\" --list-different",
     "watch": "run-s clean build:main && run-p \"build:main -- -w\"",
-    "version": "standard-version",
+    "release": "standard-version",
     "reset": "git clean -dfx && git reset --hard && npm i",
     "clean": "trash build",
     "prepare-release": "run-s reset version"
@@ -39,21 +39,20 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@types/fs-extra": "^9.0.12",
-    "@types/node": "^16.4.11",
-    "@types/puppeteer": "^5.4.4",
-    "fs-extra": "^10.0.0",
-    "puppeteer": "^10.2.0"
+    "@types/fs-extra": "^11.0.1",
+    "@types/node": "^18.15.11",
+    "fs-extra": "^11.1.1",
+    "puppeteer": "^19.9.0"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.3.2",
-    "standard-version": "^9.3.1",
+    "prettier": "^2.8.7",
+    "standard-version": "^9.5.0",
     "trash-cli": "^4.0.0",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^4.3.5"
+    "typescript": "^4.6.4"
   },
   "config": {
     "commitizen": {
